@@ -1,0 +1,8 @@
+<div *ngIf="taxCalculation" class="card">
+    <p>Gross Annual Salary: {{ taxCalculation.grossAnnualSalary | currency:'GBP':'symbol'}}</p>
+    <p>Gross Monthly Salary: {{ taxCalculation.grossMonthlySalary | currency:'GBP':'symbol' }}</p>
+    <p>Net Annual Salary: {{ taxCalculation.netAnnualSalary | currency:'GBP':'symbol' }}</p>
+    <p>Net Monthly Salary: {{ taxCalculation.netMonthlySalary | currency:'GBP':'symbol' }}</p>
+    <p>Annual Tax Paid: {{ taxCalculation.annualTaxPaid | currency:'GBP':'symbol' }}</p>
+    <p>Monthly Tax Paid: {{ taxCalculation.monthlyTaxPaid | currency:'GBP':'symbol' }}</p>
+  </div>

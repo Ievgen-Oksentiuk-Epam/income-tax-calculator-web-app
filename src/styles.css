@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+label,
+span,
+input,
+button {
+    margin: 0px 5px;
+}
+
+.card {
+    border-radius: 4px;
+    border: 1px solid #eee;
+    background-color: #fafafa;
+    padding: 18px;
+    margin: 5px;
+    width: 520px;
+}
+
+.error-message {
+    font-size: 12px;
+    color: #ff0000;
+}

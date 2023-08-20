@@ -1,0 +1,3 @@
+<app-annual-salary-input (calculate)="onCalculate($event)"></app-annual-salary-input>
+<app-tax-calculation-output *ngIf="!errorPresent" [taxCalculation]="taxCalculation"></app-tax-calculation-output>
+<div *ngIf="errorPresent" class="error-message card">{{errorMessage}}</div>

@@ -1,0 +1,9 @@
+<div  [formGroup]="grossSalaryForm" class="card">
+    <label for="grossSalary">Gross Annual Salary:</label>
+    <input type="number" id="grossSalary" formControlName="grossSalary">
+    <button (click)="onCalculateClick()">Calc</button>
+    <div *ngIf="grossSalary!.invalid && (grossSalary!.dirty || grossSalary!.touched)">
+        <label *ngIf="grossSalary!.errors?.['required']" class="error-message">Gross annual salary is required.</label>
+        <label *ngIf="grossSalary!.errors?.['pattern']" class="error-message">Gross annual salary value must be a positive numerical value with up to 2 decimal places.</label>
+      </div>
+</div>
